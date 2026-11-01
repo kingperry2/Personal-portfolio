@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+<style>
+    body{
+        margin: 0;
+        background-color: #f0f8ff;
+    }
+
+    .page header{
+        background-color: #152238;
+        color: #f8fafc;
+        height: 100px;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .content-layout{
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(240px, 320px);
+        gap: 24px;
+        max-width: 1100px;
+        margin: 32px auto;
+        padding: 0 24px;
+        align-items: start;
+    }
+
+    .content-column{
+        display: grid;
+        gap: 24px;
+    }
+
+    .card{
+        margin: 0;
+        padding: 24px;
+        background-color: #152238;
+        color: #e5e7eb;
+        border-left: 4px solid #38bdf8;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(11, 18, 32, 0.18);
+        line-height: 1.6;
+    }
+
+    .about-me{
+        margin: 0;
+        padding: 24px;
+        background-color: #152238;
+        color: #e5e7eb;
+        border-left: 4px solid #38bdf8;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(11, 18, 32, 0.18);
+        line-height: 1.6;
+    }
+
+    .about-me h2{
+        margin-top: 0;
+        color: #38bdf8;
+    }
+    .skills{
+       margin: 0;
+       padding:24px;
+       background-color: #152238 ;
+       color:#e5e7eb;
+       border-left: 4px solid #38bdf8;
+       border-radius: 12px;
+       box-shadow: 0 8px 24px rgba(11, 18, 32, 0.18);
+       line-height: 1.6;
+    }
+
+ .skills h2{
+    margin-top: 0;
+    color: #38bdf8;
+ }
+
+    .photo-column{
+        display: grid;
+        gap: 24px;
+        align-content: start;
+    }
+
+    .photo-card{
+        margin: 0;
+        padding: 12px;
+        background-color: #152238;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(11, 18, 32, 0.18);
+    }
+
+    .photo-card img{
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    @media (max-width: 700px){
+        .content-layout{
+            grid-template-columns: 1fr;
+            margin: 24px auto;
+            padding: 0 16px;
+        }
+
+        .photo-column{
+            grid-row: 1;
+            max-width: 320px;
+            width: 100%;
+            justify-self: center;
+        }
+    }
+
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>PORTFOLIO</h1>
+        </header>
+    </div>
+    <main class="content-layout">
+        <div class="content-column">
+            <section class="card">
+                <p>Software developer who enjoys turning ideas into clean, working application. i focus on full-development and learn best by building real projects</p>
+            </section>
+            <section class="about-me">
+                <h2>About Me</h2>
+                <p>i am a student passionate about Software Development. i spend my time building side projects, contributing to open source, learning new frameworks, and i am looking to land intership, join a dev team, collaborate on projects </p>
+            </section>
+            <section class="skills">
+                <h2>Skills</h2>
+                <h3>Software Development</h3>
+                <ul>
+                    <li>Languages: JavaScript, Python, Swift</li>
+                    <li>Front end: HTML, CSS, Flexbox/Grid, responsive design.</li>
+                    <li>Mobile:React Native, Andriod, IOS</li>
+                </ul>
+                <h3>Tools & Workflow</h3>
+                <ul>
+                    <li>Git and Github, VS Code, the command line</li>
+                    <li>Testing, package managers, deployment</li>
+                </ul>
+            </section>
+        </div>
+        <aside class="photo-column">
+            <figure class="photo-card">
+                <img src="1027735577486106304.jpg" alt="Profile photo">
+            </figure>
+            <figure class="photo-card">
+                <img src="Startup dev 💻.jpg" alt="Developer workstation with monitors and a laptop">
+            </figure>
+        </aside>
+    </main>
+     
+
+    
+</body>
+</html>
